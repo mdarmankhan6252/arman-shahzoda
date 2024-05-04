@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="" href="love.jpg">
+    <title>Love</title>
+</head>
+<body>
+    <div class="container">
+        <img src="love.jpg" alt="love">
+        <h1>Do you love me ?</h1>
+        <button onclick="yes()">Yes</button>
+        <button onclick="no()" id="no">No</button>
+        <h1 id="shah" class="shah">I love you too<br>
+        <span>Shahzoda</span></h1>
+    </div>
+
+    <script>
+        function yes(){
+            const shah = document.getElementById('shah');
+            shah.classList.remove('shah')
+            console.log('clicked')
+            
+        }
+        function no(){
+            const no = document.getElementById('no');
+            no.classList.add('demo')
+        }
+    </script>
+</body>
+</html>
